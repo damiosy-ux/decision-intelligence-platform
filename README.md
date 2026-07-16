@@ -37,6 +37,7 @@ Public Data Sources
 src/        Core ingestion and evaluation scripts
 docs/       Architecture and workflow notes
 examples/   Example output formats
+config/     Example rule and threshold configuration
 data/       Local runtime data folder, ignored by git
 tests/      Placeholder for validation tests
 ```
@@ -50,10 +51,20 @@ tests/      Placeholder for validation tests
 - Two-phase harvest-then-evaluate workflow
 - Explainable rule outcomes
 - Compact result output
+- Example rule configuration
+- Synthetic sample harvest records
 
 ## Current Status
 
 Early-stage research prototype.
+
+See:
+
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/usage.md`
+- `config/example-rules.json`
+- `examples/sample-harvest.json`
 
 ## Goal
 

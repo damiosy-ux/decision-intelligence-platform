@@ -1,0 +1,38 @@
+[
+  {
+    "fixture": "Example Alpha vs Example Beta",
+    "competition": "Example League",
+    "home": {
+      "entity": "Example Alpha",
+      "l3_gf": 2.4,
+      "l3_ga": 1.1,
+      "l10_gf": 2.1,
+      "l10_ga": 1.2
+    },
+    "away": {
+      "entity": "Example Beta",
+      "l3_gf": 1.0,
+      "l3_ga": 2.3,
+      "l10_gf": 1.2,
+      "l10_ga": 2.1
+    }
+  },
+  {
+    "fixture": "Example Delta vs Example Sigma",
+    "competition": "Example Reserve League",
+    "home": {
+      "entity": "Example Delta",
+      "l3_gf": 1.4,
+      "l3_ga": 1.0,
+      "l10_gf": 1.8,
+      "l10_ga": 1.1
+    },
+    "away": {
+      "entity": "Example Sigma",
+      "l3_gf": 2.2,
+      "l3_ga": 1.2,
+      "l10_gf": 2.0,
+      "l10_ga": 1.0
+    }
+  }
+]
