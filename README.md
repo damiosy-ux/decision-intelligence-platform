@@ -1,37 +1,38 @@
-# Hi, I'm Damiosy
+# Decision Intelligence Platform
 
-I build data-driven decision systems that transform messy, multi-source datasets into structured, explainable workflows.
+A modular data intelligence platform for multi-source ingestion, explainable pattern recognition, and feedback-driven evaluation.
 
-My work focuses on data ingestion, synchronization, provider alignment, evidence aggregation, pattern recognition, and feedback-driven learning. I use football analytics as a practical test domain, but the architecture is broader: collecting noisy data, validating quality, resolving conflicting signals, and producing transparent decision support.
+## Overview
 
-## What I Work On
+This project explores how noisy, heterogeneous datasets can be harvested, normalized, fused, and evaluated through transparent decision workflows.
 
-- Multi-source data ingestion and synchronization
-- Incremental ETL and caching workflows
-- Data quality validation before evaluation
+The system is designed around a simple principle: separate data collection from evaluation, then make every decision traceable.
+
+## Core Ideas
+
+- Multi-source data ingestion
+- Incremental synchronization
+- Data quality validation
 - Entity and provider alignment
-- Rule-based evaluation engines
-- Evidence aggregation and knowledge mapping
-- Explainable analytics and diagnostics
-- Post-event learning from verified outcomes
-- Research automation with AI-assisted workflows
+- Evidence aggregation
+- Rule-based evaluation
+- Explainable diagnostics
+- Feedback-driven learning from verified outcomes
 
-## Current Focus
+## Architecture
 
-Designing a modular decision intelligence platform that harvests, synchronizes, and fuses heterogeneous datasets into a unified knowledge base for explainable pattern recognition, evidence-based evaluation, and continuous learning.
+Data Sources
+  -> Ingestion Layer
+  -> Normalization + Validation
+  -> Unified Knowledge Base
+  -> Evaluation Engine
+  -> Explainable Output
+  -> Verified Outcome Feedback
 
-## Technical Interests
+## Current Status
 
-- Decision intelligence
-- Applied AI systems
-- Data engineering
-- Pattern recognition
-- Explainable analytics
-- Knowledge graphs
-- Automation
-- Research systems architecture
+Early-stage research and implementation.
 
-## Positioning
+## Goal
 
-Decision Intelligence Engineer  
-Data Engineering | Pattern Recognition | Explainable Analytics | Applied AI Systems
+To build a reusable decision intelligence framework that can support pattern recognition and explainable evaluation across noisy real-world datasets.
