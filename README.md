@@ -65,6 +65,8 @@ See:
 - `docs/architecture.md`
 - `docs/roadmap.md`
 - `docs/usage.md`
+- `docs/testing.md`
+- `docs/public-scope.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 
@@ -85,6 +87,10 @@ python -m pytest
 ```
 
 The Python implementation intentionally uses synthetic input records. This keeps the public repository focused on architecture, normalization, and explainable evaluation without exposing private source-specific workflows.
+
+## Public Scope
+
+This repository is a simplified reference implementation. It uses synthetic examples and generic rules to demonstrate architecture while keeping private datasets, provider-specific playbooks, and deeper research methodology out of the public codebase.
 
 ## Goal
 
