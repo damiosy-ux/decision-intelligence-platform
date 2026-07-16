@@ -90,6 +90,7 @@ See:
 - `docs/usage.md`
 - `docs/testing.md`
 - `docs/public-scope.md`
+- `docs/profile-claim-map.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 
