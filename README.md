@@ -75,13 +75,25 @@ tests/      Placeholder for validation tests
 - Two-phase harvest-then-evaluate workflow
 - Explainable rule outcomes
 - Compact result output
-- Example rule configuration
+- Configurable evaluation rules
 - Synthetic sample harvest records
 - Python evaluation package with tests
 
 ## Current Status
 
 Early-stage research prototype.
+
+## Core Capabilities Demonstrated
+
+- Multi-source data ingestion
+- Incremental synchronization workflows
+- Dataset normalization and entity resolution
+- Configurable evaluation rules
+- Explainable evaluation pipelines
+- Pattern recognition and evidence fusion
+- Synthetic sample datasets
+- Automated Python testing
+- GitHub Actions continuous integration
 
 See:
 

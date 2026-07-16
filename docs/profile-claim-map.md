@@ -2,7 +2,7 @@
 
 This page maps the public repository to the engineering capabilities described in the profile. The public implementation is intentionally simplified and uses synthetic examples, but each profile claim has a visible artifact in the repo.
 
-## Data Ingestion Architecture
+## Multi-Source Data Ingestion
 
 Evidence:
 
@@ -33,7 +33,7 @@ Evidence:
 
 The Python layer converts provider-shaped sample rows into stable internal records. Entity resolution is represented in the roadmap as the next layer above normalization.
 
-## External Rule Configuration
+## Configurable Evaluation Rules
 
 Evidence:
 
@@ -72,7 +72,7 @@ Evidence:
 
 The feedback-learning phase describes verified outcome ingestion, drift detection, weak-signal discovery, and recurring failure-mode analysis.
 
-## Test Coverage and CI
+## Automated Python Testing and CI
 
 Evidence:
 
