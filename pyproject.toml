@@ -1,0 +1,10 @@
+[project]
+name = "decision-intelligence-platform"
+version = "0.1.0"
+description = "A compact decision-intelligence prototype for explainable evaluation workflows."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

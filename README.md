@@ -35,6 +35,7 @@ Public Data Sources
 
 ```text
 src/        Core ingestion and evaluation scripts
+scripts/    Command-line entry points
 docs/       Architecture and workflow notes
 examples/   Example output formats
 config/     Example rule and threshold configuration
@@ -53,6 +54,7 @@ tests/      Placeholder for validation tests
 - Compact result output
 - Example rule configuration
 - Synthetic sample harvest records
+- Python evaluation package with tests
 
 ## Current Status
 
@@ -65,6 +67,24 @@ See:
 - `docs/usage.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
+
+## Python Quick Start
+
+Run the synthetic example evaluator:
+
+```powershell
+$env:PYTHONPATH = "src"
+python .\scripts\run_evaluation.py
+```
+
+Run tests:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m pytest
+```
+
+The Python implementation intentionally uses synthetic input records. This keeps the public repository focused on architecture, normalization, and explainable evaluation without exposing private source-specific workflows.
 
 ## Goal
 
