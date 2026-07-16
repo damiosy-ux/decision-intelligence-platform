@@ -31,6 +31,29 @@ Public Data Sources
     -> Outcome Feedback Loop
 ```
 
+## Architecture Summary
+
+```text
+Data Providers
+      |
+      v
+Incremental Harvest
+      |
+      v
+Normalization & Entity Resolution
+      |
+      v
+Unified Knowledge Base
+      |
+      +-- Pattern Recognition
+      +-- Evidence Fusion
+      +-- Explainable Evaluation
+      +-- Post-Event Learning
+             |
+             v
+Continuous Knowledge Improvement
+```
+
 ## Repository Structure
 
 ```text
