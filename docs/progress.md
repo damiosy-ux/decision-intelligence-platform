@@ -6,6 +6,22 @@ This document summarizes the public progress of the decision-intelligence platfo
 
 ## Completed in the Public Repository
 
+## Current Public Snapshot
+
+As of 2026-07-18, the public repository demonstrates a protected reference version of the platform:
+
+- documented architecture and roadmap
+- synthetic data examples
+- configurable rule file
+- Python normalization and evaluation package
+- PowerShell public-data prototype
+- unit tests
+- GitHub Actions CI
+- public-scope and security documentation
+- profile claim map that links public artifacts to stated capabilities
+
+The public build is intentionally scoped to show engineering structure while keeping private implementation details outside the repository.
+
 ### Repository Foundation
 
 - Public GitHub repository created.
@@ -77,6 +93,7 @@ The public repository does not include:
 - Add lightweight architecture diagrams.
 - Add a synthetic incremental sync example.
 - Add an evidence-record abstraction without exposing private methodology.
+- Add a small changelog for public milestones.
 
 ## Positioning
 
