@@ -81,7 +81,20 @@ tests/      Placeholder for validation tests
 
 ## Current Status
 
-Early-stage research prototype.
+Early-stage research prototype with a public reference implementation.
+
+The repository currently includes:
+
+- a synthetic Python evaluation package
+- externalized example rules
+- unit tests
+- GitHub Actions CI
+- architecture notes
+- roadmap documentation
+- public-scope safeguards
+- a claim map linking profile language to visible artifacts
+
+Private methodology, production source integrations, proprietary rules, and historical research datasets are intentionally excluded from the public repository.
 
 ## Core Capabilities Demonstrated
 
@@ -103,6 +116,7 @@ See:
 - `docs/testing.md`
 - `docs/public-scope.md`
 - `docs/profile-claim-map.md`
+- `docs/progress.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 
