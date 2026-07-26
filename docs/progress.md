@@ -1,6 +1,6 @@
 # Project Progress
 
-Last updated: 2026-07-18
+Last updated: 2026-07-26
 
 This document summarizes the public progress of the decision-intelligence platform while keeping private methodology and provider-specific implementation details out of scope.
 
@@ -8,7 +8,7 @@ This document summarizes the public progress of the decision-intelligence platfo
 
 ## Current Public Snapshot
 
-As of 2026-07-18, the public repository demonstrates a protected reference version of the platform:
+As of 2026-07-26, the public repository demonstrates a protected reference version of the platform:
 
 - documented architecture and roadmap
 - synthetic data examples
@@ -19,6 +19,7 @@ As of 2026-07-18, the public repository demonstrates a protected reference versi
 - GitHub Actions CI
 - public-scope and security documentation
 - profile claim map that links public artifacts to stated capabilities
+- current status snapshot for public progress tracking
 
 The public build is intentionally scoped to show engineering structure while keeping private implementation details outside the repository.
 
@@ -59,6 +60,7 @@ The public build is intentionally scoped to show engineering structure while kee
 - Added testing guide.
 - Added public-scope documentation.
 - Added profile claim map to connect public artifacts to profile language.
+- Added public status snapshots to document progress without exposing private methodology.
 
 ## Publicly Demonstrated Capabilities
 
@@ -70,6 +72,7 @@ The public build is intentionally scoped to show engineering structure while kee
 - Automated Python tests
 - GitHub Actions CI
 - Documented roadmap for incremental synchronization, entity resolution, evidence fusion, and feedback learning
+- Public progress snapshots that separate demonstrated artifacts from private implementation details
 
 ## Intentionally Not Public
 
@@ -94,6 +97,7 @@ The public repository does not include:
 - Add a synthetic incremental sync example.
 - Add an evidence-record abstraction without exposing private methodology.
 - Add a small changelog for public milestones.
+- Add a synthetic evidence-fusion example using generated records only.
 
 ## Positioning
 

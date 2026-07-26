@@ -118,6 +118,7 @@ See:
 - `docs/profile-claim-map.md`
 - `docs/progress.md`
 - `docs/status-2026-07-18.md`
+- `docs/status-2026-07-26.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 
