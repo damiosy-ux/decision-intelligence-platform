@@ -93,8 +93,11 @@ The repository currently includes:
 - roadmap documentation
 - public-scope safeguards
 - a claim map linking profile language to visible artifacts
+- dated status snapshots that document current public-safe progress
 
 Private methodology, production source integrations, proprietary rules, and historical research datasets are intentionally excluded from the public repository.
+
+Recent research direction: a draw-oriented decision intelligence workflow is being developed privately as a case study in evidence harvesting, slice-based comparison, explainable diagnostics, and post-event learning. The public repository documents the reusable architecture while keeping proprietary thresholds, provider-specific mechanics, and private datasets out of scope.
 
 ## Core Capabilities Demonstrated
 
@@ -119,6 +122,7 @@ See:
 - `docs/progress.md`
 - `docs/status-2026-07-18.md`
 - `docs/status-2026-07-26.md`
+- `docs/status-2026-07-28.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

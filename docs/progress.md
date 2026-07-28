@@ -1,6 +1,6 @@
 # Project Progress
 
-Last updated: 2026-07-26
+Last updated: 2026-07-28
 
 This document summarizes the public progress of the decision-intelligence platform while keeping private methodology and provider-specific implementation details out of scope.
 
@@ -8,7 +8,7 @@ This document summarizes the public progress of the decision-intelligence platfo
 
 ## Current Public Snapshot
 
-As of 2026-07-26, the public repository demonstrates a protected reference version of the platform:
+As of 2026-07-28, the public repository demonstrates a protected reference version of the platform:
 
 - documented architecture and roadmap
 - synthetic data examples
@@ -19,9 +19,12 @@ As of 2026-07-26, the public repository demonstrates a protected reference versi
 - GitHub Actions CI
 - public-scope and security documentation
 - profile claim map that links public artifacts to stated capabilities
-- current status snapshot for public progress tracking
+- dated status snapshots for public progress tracking
+- current research direction notes for draw-oriented decision intelligence, published only at an architectural level
 
 The public build is intentionally scoped to show engineering structure while keeping private implementation details outside the repository.
+
+The latest direction strengthens the draw-intelligence research path. Publicly, this is described as an explainable evidence workflow built around harvesting, normalization, slice comparison, offline evaluation, diagnostics, and post-event learning. The deeper methodology remains private.
 
 ### Repository Foundation
 
@@ -61,6 +64,7 @@ The public build is intentionally scoped to show engineering structure while kee
 - Added public-scope documentation.
 - Added profile claim map to connect public artifacts to profile language.
 - Added public status snapshots to document progress without exposing private methodology.
+- Added a 2026-07-28 protected status snapshot describing the draw-intelligence research direction without exposing proprietary rules.
 
 ## Publicly Demonstrated Capabilities
 
@@ -73,6 +77,13 @@ The public build is intentionally scoped to show engineering structure while kee
 - GitHub Actions CI
 - Documented roadmap for incremental synchronization, entity resolution, evidence fusion, and feedback learning
 - Public progress snapshots that separate demonstrated artifacts from private implementation details
+- Protected research-positioning notes for draw-oriented decision intelligence
+
+## Current Research Differentiator
+
+Current public review has not identified an equivalent open-source reference that combines incremental evidence harvesting, provider-safe normalization, slice-based symmetry analysis, offline evaluation, explainable diagnostics, and post-event learning with a deliberate public/private IP boundary.
+
+This is a positioning observation, not a formal market claim. The public repository keeps the implementation generic and synthetic while the private engine preserves source-specific methods and proprietary logic.
 
 ## Intentionally Not Public
 
@@ -86,6 +97,7 @@ The public repository does not include:
 - operational recovery queues
 - source-specific synchronization playbooks
 - private research notes
+- full draw-intelligence methodology
 
 ## Near-Term Public Roadmap
 
@@ -98,6 +110,7 @@ The public repository does not include:
 - Add an evidence-record abstraction without exposing private methodology.
 - Add a small changelog for public milestones.
 - Add a synthetic evidence-fusion example using generated records only.
+- Add a public-safe synthetic symmetry-analysis design note.
 
 ## Positioning
 
