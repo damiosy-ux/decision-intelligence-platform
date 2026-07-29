@@ -99,6 +99,8 @@ Private methodology, production source integrations, proprietary rules, and hist
 
 Recent research direction: a draw-oriented decision intelligence workflow is being developed privately as a case study in evidence harvesting, slice-based comparison, explainable diagnostics, and post-event learning. The public repository documents the reusable architecture while keeping proprietary thresholds, provider-specific mechanics, and private datasets out of scope.
 
+Current public update as of 2026-07-29: the repository now makes the public/private boundary more explicit for the draw-intelligence research direction. Public materials demonstrate architecture, normalization, configurable examples, explainable diagnostics, tests, and CI while excluding production provider logic, private data, scoring thresholds, and operational methods.
+
 ## Core Capabilities Demonstrated
 
 - Multi-source data ingestion
@@ -123,6 +125,7 @@ See:
 - `docs/status-2026-07-18.md`
 - `docs/status-2026-07-26.md`
 - `docs/status-2026-07-28.md`
+- `docs/status-2026-07-29.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

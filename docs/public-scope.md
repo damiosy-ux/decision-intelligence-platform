@@ -45,3 +45,5 @@ The deeper research workflow can remain private while this repository demonstrat
 The draw-oriented research direction is documented publicly only as an architectural case study. Public materials may describe high-level stages such as evidence harvesting, normalization, slice comparison, offline evaluation, diagnostics, and learning loops.
 
 The public repository must not include the private engine's source-specific parsing details, exact thresholds, scoring combinations, validated fixture history, provider tactics, or operational automation logic.
+
+Future public additions related to this research direction should use synthetic records, generic labels, simplified rules, and architecture-level explanations only.
