@@ -58,6 +58,7 @@ The 2026-08-09 update documents recent engine corrections at a public-safe level
 ### Testing and CI
 
 - Added unit tests for normalization and evaluation behavior.
+- Added fail-closed validation for incomplete and invalid synthetic evidence records.
 - Added GitHub Actions CI.
 - Verified tests pass locally and in CI.
 
@@ -128,7 +129,7 @@ The public repository does not include:
 - Add a public-safe synthetic symmetry-analysis design note.
 - Add generic evidence-slice models without production provider fields.
 - Add synthetic evidence-completeness examples.
-- Add generic validation tests for missing source fields.
+- Extend generic validation coverage to conflicting source fields.
 
 ## Positioning
 

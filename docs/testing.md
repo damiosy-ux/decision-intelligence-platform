@@ -14,6 +14,8 @@ The GitHub Actions workflow runs the same test suite on every push and pull requ
 ## Current Test Coverage
 
 - raw sample row normalization
+- incomplete-evidence rejection
+- invalid metric rejection
 - rule-based result retention
 - classification output
 - failed-rule output
@@ -21,6 +23,5 @@ The GitHub Actions workflow runs the same test suite on every push and pull requ
 ## Next Test Areas
 
 - tie-breaking behavior
-- invalid record handling
 - config validation
 - output serialization
