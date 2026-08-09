@@ -101,10 +101,14 @@ Recent research direction: a draw-oriented decision intelligence workflow is bei
 
 Current public update as of 2026-07-29: the repository now makes the public/private boundary more explicit for the draw-intelligence research direction. Public materials demonstrate architecture, normalization, configurable examples, explainable diagnostics, tests, and CI while excluding production provider logic, private data, scoring thresholds, and operational methods.
 
+Current engine correction update as of 2026-08-09: recent private work strengthens validation before evaluation, individual confidence gating, incomplete-evidence rejection, source-availability checks, and offline review before decision logic runs. The public repository records these as architecture and workflow improvements only, without exposing private formulas, provider mechanics, or proprietary thresholds.
+
 ## Core Capabilities Demonstrated
 
 - Multi-source data ingestion
 - Incremental synchronization workflows
+- Harvest-before-evaluate workflow design
+- Evidence completeness validation
 - Dataset normalization and entity resolution
 - Configurable evaluation rules
 - Explainable evaluation pipelines
@@ -126,6 +130,7 @@ See:
 - `docs/status-2026-07-26.md`
 - `docs/status-2026-07-28.md`
 - `docs/status-2026-07-29.md`
+- `docs/status-2026-08-09.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

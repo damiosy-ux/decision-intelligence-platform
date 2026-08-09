@@ -22,10 +22,12 @@ It demonstrates the structure of a decision-intelligence workflow without publis
 - Full scoring methodology
 - Full draw-intelligence methodology
 - Proprietary thresholds and comparison rules
+- Proprietary confidence formulas
 - Source-specific harvesting and synchronization tactics
 - Historical outcome datasets
 - Production monitoring or automation rules
 - Private research notes and post-event learning records
+- Incomplete-evidence recovery tactics
 
 ## Design Intent
 
@@ -47,3 +49,5 @@ The draw-oriented research direction is documented publicly only as an architect
 The public repository must not include the private engine's source-specific parsing details, exact thresholds, scoring combinations, validated fixture history, provider tactics, or operational automation logic.
 
 Future public additions related to this research direction should use synthetic records, generic labels, simplified rules, and architecture-level explanations only.
+
+Engine-correction documentation should describe validation discipline and separation of concerns without publishing formulas, provider-specific source checks, or proprietary gate conditions.
