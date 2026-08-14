@@ -27,10 +27,11 @@ def main() -> None:
 
     print(f"records={len(records)} results={len(results)}")
     for result in results:
+        passed = ",".join(result.passed_rules)
         failed = ",".join(result.failed_rules)
         print(
             f"{result.fixture} | {result.side} | {result.entity} | "
-            f"{result.score} | {result.classification} | {failed}"
+            f"{result.score} | {result.classification} | {passed} | {failed}"
         )
 
 

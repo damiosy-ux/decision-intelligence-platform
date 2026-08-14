@@ -53,10 +53,15 @@ def evaluate_selection(
     if score == 0:
         return None
 
+    passed_rules: list[str] = []
     failed_rules: list[str] = []
-    if not positive_signal:
+    if positive_signal:
+        passed_rules.append("positive_signal")
+    else:
         failed_rules.append("positive_signal")
-    if not suppression_signal:
+    if suppression_signal:
+        passed_rules.append("suppression_signal")
+    else:
         failed_rules.append("suppression_signal")
 
     return EvaluationResult(
@@ -65,6 +70,7 @@ def evaluate_selection(
         entity=selected.entity,
         score=score,
         classification=_classification(score, rules),
+        passed_rules=tuple(passed_rules),
         failed_rules=tuple(failed_rules) or ("-",),
         alignment_distance=_alignment_distance(selected, opponent, rules),
     )

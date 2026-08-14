@@ -74,6 +74,7 @@ tests/      Placeholder for validation tests
 - Structured data normalization
 - Two-phase harvest-then-evaluate workflow
 - Explainable rule outcomes
+- Explicit passed-rule and failed-rule diagnostics
 - Compact result output
 - Configurable evaluation rules
 - Synthetic sample harvest records
@@ -101,7 +102,7 @@ Recent research direction: a draw-oriented decision intelligence workflow is bei
 
 Current public update as of 2026-07-29: the repository now makes the public/private boundary more explicit for the draw-intelligence research direction. Public materials demonstrate architecture, normalization, configurable examples, explainable diagnostics, tests, and CI while excluding production provider logic, private data, scoring thresholds, and operational methods.
 
-Current engine correction update as of 2026-08-09: recent private work strengthens validation before evaluation, individual confidence gating, incomplete-evidence rejection, source-availability checks, and offline review before decision logic runs. The public repository records these as architecture and workflow improvements only, without exposing private formulas, provider mechanics, or proprietary thresholds.
+Current engine correction update as of 2026-08-14: the public reference engine now reports both passed and failed rule groups, retains fail-closed evidence validation, and explicitly treats rule scores as eligibility signals rather than calibrated probabilities. Private formulas, provider mechanics, operational automation, and proprietary thresholds remain excluded.
 
 ## Core Capabilities Demonstrated
 
@@ -131,6 +132,7 @@ See:
 - `docs/status-2026-07-28.md`
 - `docs/status-2026-07-29.md`
 - `docs/status-2026-08-09.md`
+- `docs/status-2026-08-14.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

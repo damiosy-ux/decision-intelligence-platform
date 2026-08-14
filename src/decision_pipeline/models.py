@@ -27,5 +27,6 @@ class EvaluationResult:
     entity: str
     score: int
     classification: str
+    passed_rules: tuple[str, ...]
     failed_rules: tuple[str, ...]
     alignment_distance: float
