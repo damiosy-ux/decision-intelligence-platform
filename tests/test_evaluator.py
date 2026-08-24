@@ -1,4 +1,5 @@
-from decision_pipeline.evaluator import evaluate_records
+from decision_pipeline.evaluator import choose_result, evaluate_records
+from decision_pipeline.models import EvaluationResult
 from decision_pipeline.normalizer import normalize_records
 
 
@@ -81,3 +82,29 @@ def test_evaluator_reports_partial_rule_diagnostics():
     assert result.score == 1
     assert result.passed_rules == ("positive_signal",)
     assert result.failed_rules == ("suppression_signal",)
+
+
+def test_tied_candidates_are_rejected_without_clear_alignment_gap():
+    rules = {"tie_breaking": {"minimum_alignment_gap": 1.0}}
+    home = EvaluationResult(
+        fixture="Example Tie",
+        side="Home",
+        entity="Example Home",
+        score=1,
+        classification="lean",
+        passed_rules=("positive_signal",),
+        failed_rules=("suppression_signal",),
+        alignment_distance=2.0,
+    )
+    away = EvaluationResult(
+        fixture="Example Tie",
+        side="Away",
+        entity="Example Away",
+        score=1,
+        classification="lean",
+        passed_rules=("suppression_signal",),
+        failed_rules=("positive_signal",),
+        alignment_distance=2.4,
+    )
+
+    assert choose_result(home, away, rules) is None
