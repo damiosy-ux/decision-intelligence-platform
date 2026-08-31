@@ -6,7 +6,7 @@ A modular data intelligence platform for multi-source ingestion, explainable pat
 
 This repository demonstrates a small but practical decision-intelligence workflow:
 
-1. Harvest public event data from an external provider.
+1. Ingest event data through an abstract source boundary.
 2. Validate source quality before evaluation.
 3. Normalize raw provider fields into a consistent internal schema.
 4. Store harvested records before scoring.
@@ -68,9 +68,7 @@ tests/      Placeholder for validation tests
 
 ## Current Features
 
-- Public data harvesting
-- Source and competition filtering
-- HTML table extraction
+- Source-agnostic ingestion contracts
 - Structured data normalization
 - Two-phase harvest-then-evaluate workflow
 - Explainable rule outcomes
@@ -99,15 +97,17 @@ The repository currently includes:
 
 Private methodology, production source integrations, proprietary rules, and historical research datasets are intentionally excluded from the public repository.
 
-Recent research direction: a draw-oriented decision intelligence workflow is being developed privately as a case study in evidence harvesting, slice-based comparison, explainable diagnostics, and post-event learning. The public repository documents the reusable architecture while keeping proprietary thresholds, provider-specific mechanics, and private datasets out of scope.
+Recent research direction: domain-specific decision workflows are being developed privately as case studies in evidence harvesting, slice-based comparison, explainable diagnostics, and post-event learning. The public repository documents the reusable architecture while keeping proprietary thresholds, provider-specific mechanics, and private datasets out of scope.
 
 Current public update as of 2026-07-29: the repository now makes the public/private boundary more explicit for the draw-intelligence research direction. Public materials demonstrate architecture, normalization, configurable examples, explainable diagnostics, tests, and CI while excluding production provider logic, private data, scoring thresholds, and operational methods.
 
 Current engine correction update as of 2026-08-24: the public reference engine now validates external configuration before evaluation, rejects ambiguous tied candidates deterministically, reports both passed and failed rule groups, and treats rule scores as eligibility signals rather than calibrated probabilities. Private formulas, provider mechanics, operational automation, and proprietary thresholds remain excluded.
 
+Current public-safety update as of 2026-08-31: production harvesting integrations have been removed from the public tree, classification labels now describe evidence strength rather than implied probability, and public examples remain entirely synthetic. No private datasets, credentials, machine paths, provider endpoints, or operational scoring logic are included.
+
 ## Core Capabilities Demonstrated
 
-- Multi-source data ingestion
+- Source-agnostic ingestion design
 - Incremental synchronization workflows
 - Harvest-before-evaluate workflow design
 - Evidence completeness validation
@@ -135,6 +135,7 @@ See:
 - `docs/status-2026-08-09.md`
 - `docs/status-2026-08-14.md`
 - `docs/status-2026-08-24.md`
+- `docs/status-2026-08-31.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

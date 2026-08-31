@@ -5,7 +5,7 @@ accepted=23 harvested=23 results=1
 
 Fixture                      Side Entity         Score Class PassedRules     FailedRules
 -------                      ---- ------         ----- ----- -----------     -----------
-Example Alpha vs Example Beta Home Example Alpha 2     high  signal_a,signal_b -
+Example Alpha vs Example Beta Home Example Alpha 2     strong_alignment signal_a,signal_b -
 ```
 
 The output is intentionally compact:

@@ -9,7 +9,7 @@ def test_evaluator_retains_explainable_result():
             "positive_signal": {"selected_gf_min": 2.0, "opponent_gf_max": 1.3},
             "suppression_signal": {"selected_ga_max": 1.3, "opponent_ga_min": 2.0},
         },
-        "classification": {"2": "high_confidence", "1": "lean", "0": "skip"},
+        "classification": {"2": "strong_alignment", "1": "partial_alignment", "0": "skip"},
         "tie_breaking": {"minimum_alignment_gap": 1.0},
     }
     records = normalize_records(
@@ -40,7 +40,7 @@ def test_evaluator_retains_explainable_result():
     assert len(results) == 1
     assert results[0].entity == "Example Alpha"
     assert results[0].score == 2
-    assert results[0].classification == "high_confidence"
+    assert results[0].classification == "strong_alignment"
     assert results[0].passed_rules == ("positive_signal", "suppression_signal")
     assert results[0].failed_rules == ("-",)
 
@@ -51,7 +51,7 @@ def test_evaluator_reports_partial_rule_diagnostics():
             "positive_signal": {"selected_gf_min": 2.0, "opponent_gf_max": 1.3},
             "suppression_signal": {"selected_ga_max": 1.3, "opponent_ga_min": 2.0},
         },
-        "classification": {"2": "high_confidence", "1": "lean", "0": "skip"},
+        "classification": {"2": "strong_alignment", "1": "partial_alignment", "0": "skip"},
         "tie_breaking": {"minimum_alignment_gap": 1.0},
     }
     records = normalize_records(
@@ -91,7 +91,7 @@ def test_tied_candidates_are_rejected_without_clear_alignment_gap():
         side="Home",
         entity="Example Home",
         score=1,
-        classification="lean",
+        classification="partial_alignment",
         passed_rules=("positive_signal",),
         failed_rules=("suppression_signal",),
         alignment_distance=2.0,
@@ -101,7 +101,7 @@ def test_tied_candidates_are_rejected_without_clear_alignment_gap():
         side="Away",
         entity="Example Away",
         score=1,
-        classification="lean",
+        classification="partial_alignment",
         passed_rules=("suppression_signal",),
         failed_rules=("positive_signal",),
         alignment_distance=2.4,
