@@ -12,7 +12,7 @@ This repository demonstrates a small but practical decision-intelligence workflo
 4. Store harvested records before scoring.
 5. Run an offline rule engine with explainable pass/fail diagnostics.
 
-The current implementation uses public football match data as the working case study. The architecture is intentionally broader: it can be adapted to other noisy, multi-provider datasets where inputs must be filtered, normalized, evaluated, and explained.
+The public implementation uses synthetic event records. Its architecture can be adapted to noisy, multi-source datasets where inputs must be filtered, normalized, evaluated, and explained.
 
 ## Why This Matters
 
@@ -63,7 +63,7 @@ docs/       Architecture and workflow notes
 examples/   Example output formats
 config/     Example rule and threshold configuration
 data/       Local runtime data folder, ignored by git
-tests/      Placeholder for validation tests
+tests/      Validation, configuration, and evaluation tests
 ```
 
 ## Current Features
@@ -105,6 +105,8 @@ Current engine correction update as of 2026-08-24: the public reference engine n
 
 Current public-safety update as of 2026-08-31: production harvesting integrations have been removed from the public tree, classification labels now describe evidence strength rather than implied probability, and public examples remain entirely synthetic. No private datasets, credentials, machine paths, provider endpoints, or operational scoring logic are included.
 
+Current documentation update as of 2026-09-04: public claims, roadmap items, and progress records now match the source-agnostic implementation. Rule-group scores remain evidence labels; percentage confidence requires separate outcome calibration and is not inferred from thresholds.
+
 ## Core Capabilities Demonstrated
 
 - Source-agnostic ingestion design
@@ -136,6 +138,7 @@ See:
 - `docs/status-2026-08-14.md`
 - `docs/status-2026-08-24.md`
 - `docs/status-2026-08-31.md`
+- `docs/status-2026-09-04.md`
 - `config/example-rules.json`
 - `examples/sample-harvest.json`
 

@@ -1,6 +1,6 @@
 # Project Progress
 
-Last updated: 2026-08-24
+Last updated: 2026-09-04
 
 This document summarizes the public progress of the decision-intelligence platform while keeping private methodology and provider-specific implementation details out of scope.
 
@@ -8,19 +8,18 @@ This document summarizes the public progress of the decision-intelligence platfo
 
 ## Current Public Snapshot
 
-As of 2026-08-09, the public repository demonstrates a protected reference version of the platform:
+As of 2026-09-04, the public repository demonstrates a protected reference version of the platform:
 
 - documented architecture and roadmap
 - synthetic data examples
 - configurable rule file
 - Python normalization and evaluation package
-- PowerShell public-data prototype
 - unit tests
 - GitHub Actions CI
 - public-scope and security documentation
 - profile claim map that links public artifacts to stated capabilities
 - dated status snapshots for public progress tracking
-- current research direction notes for draw-oriented decision intelligence, published only at an architectural level
+- current research direction notes published only at an architectural level
 - a clearer public/private boundary for protected project work
 - current engine-correction notes around validation before evaluation, individual gating, and incomplete-evidence rejection
 - passed-rule and failed-rule diagnostics in the synthetic evaluator
@@ -30,7 +29,7 @@ As of 2026-08-09, the public repository demonstrates a protected reference versi
 
 The public build is intentionally scoped to show engineering structure while keeping private implementation details outside the repository.
 
-The latest direction strengthens the draw-intelligence research path. Publicly, this is described as an explainable evidence workflow built around harvesting, normalization, slice comparison, offline evaluation, diagnostics, and post-event learning. The deeper methodology remains private.
+The latest direction strengthens an explainable evidence workflow built around ingestion, normalization, slice comparison, offline evaluation, diagnostics, and post-event learning. The deeper methodology remains private.
 
 The 2026-07-29 update reinforces that public examples should remain synthetic and generic. The private engine's provider-specific logic, thresholds, scoring combinations, operational automation, and validated historical research stay outside the public repository.
 
@@ -94,15 +93,13 @@ The 2026-08-24 update validates the public rule schema before evaluation and add
 - GitHub Actions CI
 - Documented roadmap for incremental synchronization, entity resolution, evidence fusion, and feedback learning
 - Public progress snapshots that separate demonstrated artifacts from private implementation details
-- Protected research-positioning notes for draw-oriented decision intelligence
+- Protected research-positioning notes for domain-specific decision workflows
 - Explicit public/private IP boundary for project documentation
 - Evidence validation and individual-gate workflow corrections described at architecture level
 
 ## Current Research Differentiator
 
-Current public review has not identified an equivalent open-source reference that combines incremental evidence harvesting, provider-safe normalization, slice-based symmetry analysis, offline evaluation, explainable diagnostics, and post-event learning with a deliberate public/private IP boundary.
-
-This is a positioning observation, not a formal market claim. The public repository keeps the implementation generic and synthetic while the private engine preserves source-specific methods and proprietary logic.
+The public reference combines staged evidence ingestion, normalization, offline evaluation, explainable diagnostics, and a deliberate public/private IP boundary. It is an engineering demonstration, not a uniqueness or market-performance claim.
 
 ## Intentionally Not Public
 
@@ -125,10 +122,7 @@ The public repository does not include:
 
 ## Near-Term Public Roadmap
 
-- Add config validation.
 - Add serializer support for JSON and CSV output.
-- Add tie-breaking tests.
-- Add invalid-record tests.
 - Add lightweight architecture diagrams.
 - Add a synthetic incremental sync example.
 - Add an evidence-record abstraction without exposing private methodology.
@@ -138,6 +132,9 @@ The public repository does not include:
 - Add generic evidence-slice models without production provider fields.
 - Add synthetic evidence-completeness examples.
 - Extend generic validation coverage to conflicting source fields.
+- Add an explicit calibration interface for outcome-backed probability estimates.
+
+Completed roadmap items are tracked in the dated status notes rather than retained as future work.
 
 ## Positioning
 

@@ -4,9 +4,9 @@ This roadmap tracks the project as a decision-intelligence platform rather than 
 
 ## Phase 1: Data Ingestion
 
-- Harvest public provider feeds.
-- Detect accepted source contexts before fetching event pages.
-- Extract only relevant structured tables.
+- Define source-adapter contracts.
+- Detect accepted source contexts before ingesting records.
+- Extract only relevant structured fields.
 - Store raw and normalized records separately.
 
 ## Phase 2: Incremental Synchronization
@@ -18,19 +18,19 @@ This roadmap tracks the project as a decision-intelligence platform rather than 
 
 ## Phase 3: Normalization
 
-- Convert provider-specific fields into stable internal schemas.
+- Convert source-specific fields into stable internal schemas.
 - Standardize entity names, event identifiers, and metric labels.
 - Validate required fields before evaluation.
 
 ## Phase 4: Entity Resolution
 
-- Align duplicate entities across providers.
+- Align duplicate entities across sources.
 - Build confidence scores for entity matches.
-- Preserve aliases and source-specific names.
+- Preserve aliases and source-specific names without exposing private mappings.
 
 ## Phase 5: Evidence Graph
 
-- Represent entities, events, metrics, providers, and outcomes as connected evidence.
+- Represent entities, events, metrics, sources, and outcomes as connected evidence.
 - Track why a result was retained, rejected, or downgraded.
 - Support explainable diagnostics from the graph.
 
@@ -45,6 +45,8 @@ This roadmap tracks the project as a decision-intelligence platform rather than 
 - Add verified outcome ingestion.
 - Compare prior evaluations with observed results.
 - Identify rule drift, weak signals, and recurring failure modes.
+- Calibrate probability estimates only against held-out verified outcomes.
+- Keep uncalibrated rule scores labeled as evidence strength.
 
 ## Phase 8: Reporting
 
